@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Home from "./components/Home"
 import Features from "./components/Features"
 import About from "./components/About"
+import Login from "./components/Login"
 import Footer from "./components/Footer"
 import { ImageProvider } from "./context/ImageContext"
 import "./App.css"
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/features" element={<Features />} />
             <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />
         </div>
