@@ -1,4 +1,4 @@
-# PictoScript: Multi-Model Image Captioning
+# PictoScript: Multi-Modal Image Captioning
 
 ## About The Project
 
