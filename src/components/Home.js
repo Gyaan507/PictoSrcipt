@@ -1,12 +1,12 @@
 import React, { useCallback, useState } from "react"
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 import { UploadIcon as FileUpload, X } from "lucide-react"
 import { useImage } from "../context/ImageContext"
 
 function Home() {
   const [isDragging, setIsDragging] = useState(false)
   const { selectedImage, setSelectedImage, removeImage } = useImage()
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const handleImageChange = (e) => {
     const file = e.target.files[0]
@@ -64,7 +64,7 @@ function Home() {
                 <img src={selectedImage || "/placeholder.svg"} alt="Selected" className="preview-image" />
                 <button type="button" onClick={removeImage} className="remove-button" aria-label="Remove image">
                   <X size={20} />
-                </button>
+                </button>  
               </div>
             ) : (
               <div className="upload-prompt">
@@ -75,7 +75,7 @@ function Home() {
           </div>
           <button type="submit" className="analyze-button" disabled={!selectedImage}>
             Analyze Image
-          </button>
+          </button> 
         </form>
       </div>
       <div className="hero-image">

@@ -34,4 +34,3 @@ export function useImage() {
   }
   return context
 }
-
